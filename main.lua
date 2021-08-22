@@ -200,7 +200,7 @@ astolfo_pic.ImageTransparency = 0.400
 
 -- Scripts:
 
-local function HXKZDRE_fake_script() -- f_to_noclip.LocalScript 
+local function ODORKOI_fake_script() -- f_to_noclip.LocalScript 
 	local script = Instance.new('LocalScript', f_to_noclip)
 
 	function do_stuff()
@@ -223,8 +223,8 @@ local function HXKZDRE_fake_script() -- f_to_noclip.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(do_stuff)
 end
-coroutine.wrap(HXKZDRE_fake_script)()
-local function MRKW_fake_script() -- speed_set.LocalScript 
+coroutine.wrap(ODORKOI_fake_script)()
+local function ANHR_fake_script() -- speed_set.LocalScript 
 	local script = Instance.new('LocalScript', speed_set)
 
 	function do_stuff()
@@ -235,8 +235,8 @@ local function MRKW_fake_script() -- speed_set.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(do_stuff)
 end
-coroutine.wrap(MRKW_fake_script)()
-local function SHLHB_fake_script() -- t_to_teleport.LocalScript 
+coroutine.wrap(ANHR_fake_script)()
+local function WWKYX_fake_script() -- t_to_teleport.LocalScript 
 	local script = Instance.new('LocalScript', t_to_teleport)
 
 	function enable_collisions(object)
@@ -290,11 +290,10 @@ local function SHLHB_fake_script() -- t_to_teleport.LocalScript
 			if distance < 10 then
 				break
 			end
-			if os.time() - x >= 30 then
+			if (os.time() - x) >= 20 then
 				break
 			end
 		end
-	
 		game.Players.LocalPlayer.Character.Head.Anchored = true
 		enable_collisions(workspace)
 		part_attachment:Remove()
@@ -302,6 +301,7 @@ local function SHLHB_fake_script() -- t_to_teleport.LocalScript
 		align_position:Remove()
 		workspace.Gravity = 196.2
 		game.Players.LocalPlayer.Character.Head.Anchored = false
+		part.Anchored = false
 	end
 	
 	function do_stuff()
@@ -324,8 +324,8 @@ local function SHLHB_fake_script() -- t_to_teleport.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(do_stuff)
 end
-coroutine.wrap(SHLHB_fake_script)()
-local function MTUE_fake_script() -- teleport_to_player.LocalScript 
+coroutine.wrap(WWKYX_fake_script)()
+local function UNYKW_fake_script() -- teleport_to_player.LocalScript 
 	local script = Instance.new('LocalScript', teleport_to_player)
 
 	function enable_collisions(object)
@@ -390,6 +390,7 @@ local function MTUE_fake_script() -- teleport_to_player.LocalScript
 		align_position:Remove()
 		workspace.Gravity = 196.2
 		game.Players.LocalPlayer.Character.Head.Anchored = false
+		part.Anchored = false
 	end
 	
 	function do_stuff()
@@ -408,8 +409,8 @@ local function MTUE_fake_script() -- teleport_to_player.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(do_stuff)
 end
-coroutine.wrap(MTUE_fake_script)()
-local function ZTMHMWT_fake_script() -- fly.LocalScript 
+coroutine.wrap(UNYKW_fake_script)()
+local function HBGDI_fake_script() -- fly.LocalScript 
 	local script = Instance.new('LocalScript', fly)
 
 	function do_stuff()
@@ -497,8 +498,8 @@ local function ZTMHMWT_fake_script() -- fly.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(do_stuff)
 end
-coroutine.wrap(ZTMHMWT_fake_script)()
-local function WYIHG_fake_script() -- astolfo_pet.LocalScript 
+coroutine.wrap(HBGDI_fake_script)()
+local function CSQMC_fake_script() -- astolfo_pet.LocalScript 
 	local script = Instance.new('LocalScript', astolfo_pet)
 
 	function do_stuff()
@@ -629,4 +630,4 @@ local function WYIHG_fake_script() -- astolfo_pet.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(do_stuff)
 end
-coroutine.wrap(WYIHG_fake_script)()
+coroutine.wrap(CSQMC_fake_script)()
